@@ -69,6 +69,54 @@
                             </p>
                         </div>
 
+                        <!-- Internet -->
+                    <div class="relative">
+                        <label class="block font-semibold mb-2 text-gray-700"
+                        >Internet 🌐</label
+                        >
+                        <input
+                        type="number"
+                        id="internet"
+                        class="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                        placeholder="Internet cost"
+                        />
+                        <p id="internet-error" class="text-red-500 text-xs mt-1 hidden">
+                        ⚠️ Invalid amount!
+                        </p>
+                    </div>
+
+                    <!-- Calculate Button -->
+                    <button
+                        id="calculate"
+                        class="col-span-2 text-white px-4 py-2 rounded-md font-semibold text-sm transition-all duration-200 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 focus:ring-blue-500"
+                    >
+                        Calculate
+                    </button>
+
+                    <!-- Savings -->
+                    <div class="relative col-span-2">
+                        <label class="block font-semibold mb-2 text-gray-700"
+                        >Savings (%) 💸</label
+                        >
+                        <input
+                        type="number"
+                        id="savings"
+                        class="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                        placeholder="Savings %"
+                        />
+                        <p id="savings-error" class="text-red-500 text-xs mt-1 hidden">
+                        ⚠️ Invalid percentage!
+                        </p>
+                    </div>
+
+                    <!-- Calculate Savings Button -->
+                    <button
+                        id="calculate-savings"
+                        class="col-span-2 text-white px-4 py-2 rounded-md font-semibold text-sm transition-all duration-200 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 focus:ring-green-500"
+                    >
+                        Calculate Savings
+                    </button>
+
                  </div>
 
             </div>
