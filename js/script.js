@@ -65,5 +65,15 @@ calculateSavingButton.addEventListener("click", function () {
 });
 
 
+// history button functionality
+const historyButton = document.getElementById('history-tab');
+const assistantButton = document.getElementById('assistant-tab');
+historyButton.addEventListener('click', function(){
+    historyButton.classList.add('text-white', 'bg-gradient-to-r', 'from-red-400', 'to-green-600');
+    assistantButton.classList.remove('text-white', 'bg-gradient-to-r', 'from-red-400', 'to-green-600');
 
+    
+    // document.getElementById('Expense-form').classList.add('hidden');
+    // document.getElementById('history-section').classList.remove('hidden');
+})
 
