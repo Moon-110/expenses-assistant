@@ -8,6 +8,13 @@ calculateButton.addEventListener('click', function(){
     const totalExpenses = software + courses + internet;
     const balance = income - totalExpenses;
 
-    console.table({totalExpenses, balance});
+    const totalExpensesElement = document.getElementById('total-expenses');
+    totalExpensesElement.innerText = totalExpenses.toFixed(2);
+
+    const balanceElement = document.getElementById('balance');
+    balanceElement.innerText = balance.toFixed(2);
+
+    const result = document.getElementById('results');
+    result.classList.remove('hidden');
     
 })
