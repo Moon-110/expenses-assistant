@@ -9,8 +9,30 @@ calculateButton.addEventListener("click", function () {
   const courses = parseFloat(document.getElementById("courses").value);
   const internet = parseFloat(document.getElementById("internet").value);
 
+  if(income<=0 || isNaN(income)){
+    document.getElementById('income-error').classList.remove('hidden');
+    return;
+  }
+    if(software<=0 || isNaN(software)){
+    document.getElementById('software-error').classList.remove('hidden');
+    return;
+}
+ if(courses<=0 || isNaN(courses)){
+    document.getElementById('courses-error').classList.remove('hidden');
+    return;
+}
+ if(internet<=0 || isNaN(internet)){
+    document.getElementById('internet-error').classList.remove('hidden');
+    return;
+  }
+
   const totalExpenses = software + courses + internet;
   const balance = income - totalExpenses;
+
+  if(totalExpenses>income){
+    document.getElementById('logic-error').classList.remove('hidden');
+    return;
+  }
 
   const totalExpensesElement = document.getElementById("total-expenses");
   totalExpensesElement.innerText = totalExpenses.toFixed(2);
