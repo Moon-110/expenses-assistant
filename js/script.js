@@ -73,7 +73,14 @@ historyButton.addEventListener('click', function(){
     assistantButton.classList.remove('text-white', 'bg-gradient-to-r', 'from-red-400', 'to-green-600');
 
     
-    // document.getElementById('Expense-form').classList.add('hidden');
-    // document.getElementById('history-section').classList.remove('hidden');
+    document.getElementById('Expense-form').classList.add('hidden');
+    document.getElementById('history-section').classList.remove('hidden');
 })
 
+assistantButton.addEventListener('click', function(){
+    assistantButton.classList.add('text-white', 'bg-gradient-to-r', 'from-red-400', 'to-green-600');
+    historyButton.classList.remove('text-white', 'bg-gradient-to-r', 'from-red-400', 'to-green-600');
+
+    document.getElementById('Expense-form').classList.remove('hidden');
+    document.getElementById('history-section').classList.add('hidden');
+})
